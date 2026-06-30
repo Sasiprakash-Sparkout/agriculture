@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>STUDENT REGISTERIATION FORM</h1>
+    <form action="farm.html" method="post">
+        <label for="name">FULL NAME:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <input type="hidden" name="name" id="name" value="345">
+        <label for="email">EMAIL:</label>
+        <input type="email" name="email" id="name" required><br><br>
+        <label for="pwd">PASSWORD:</label>
+        <input type="password" name="pwd" id="pwd" minlength="8"><br><br>
+        <label for="tel">PHONE NUMBER:</label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]" placeholder="enter the number"><br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" name="dob"><br><br>
+        <label for="age">AGE:</label>
+        <input type="number" name="age" id="age" min="15" max="35"><br><br>
+        <label for="photo">UPLAD PHOTO:</label>
+        <input type="file" name="photo" id="photo"><br><br>
+        <label>SELECT GENDER</label>:
+        <input type="radio" name="gender" id="male">
+        <label for="gender">MALE</label>
+        <input type="radio" name="gender" id="female">
+        <label for="gender">FEMALE</label><br><br>
+        <label>CHOOSE YOUR SKILLS:</label><br>
+        <input type="checkbox" name="language1" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="language2" id="css">
+        <label for="html">css</label>
+        <input type="checkbox" name="language3" id="java">
+        <label for="html">java</label>
+        <input type="checkbox" name="language4" id="python">
+        <label for="html">python</label><br><br>
+        <label for="department">SELect department:</label>
+        <select list="department" name="department">
+            <option value="computerscience">computer science</option>
+            <option value="bca">bca</option>
+            <option value="mca">mca</option>
+            <option value="mba">mba</option>
+        </select><br><br>
+        <label>FAVORATE PROGRAMMING LANGUAGE:</label>
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="html"></option>
+            <option value="css"></option>
+            <option value="java"></option>
+        </datalist><br><br>
+        <label>ADDRESS:</label>
+        <textarea name="message" maxlength="200" required></textarea><br><br>
+        <label for="url">WEBSITE URL:</label>
+        <input type="url" name="url" id="url"><br><br>
+        <label for="time">PREFERRED TIME FOR INTERVIEW:</label>
+        <input type="time" name="time" id="time"><br><br>
+        <label for="resume">RESUME UPLOAD:</label>
+        <input type="file" name="resume" id="resume" accept=".pdf,.jpg"><br><br>
+        <label for="slider">COURSE STATIFICATION:</label>
+        <input type="range" id="slider" name="slider" min="1" max="10"><br><br>
+        <label for="color">FAVOURTE COLOR:</label>
+        <input type="color" name="color" id="color"><br><br>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Submit"><br><br>
+        <input type="checkbox" name="terms" id="conditions" required>
+        <label for="terms">I agree to the Terms and Conditions</label><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+    </form>
+</body>
+
+</html>
